@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="but">
+
+<hxq v-for="item in items" v-bind:he="item" >
+
+</hxq>
+
+    <div/>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    Vue.component('hxq',{
+        props:['he'],
+        template:' <li>{{he}}</li>'
+
+
+
+    });
+    var vm=new  Vue({
+        el: "#but",
+        data: {
+            selected:'',
+            items:['java','linux','前端']
+        },
+        methods:{
+            say_hi:function () {
+                alert(this.message)
+
+            }
+        }
+
+
+    });
+</script>
+
+</body>
+</html>

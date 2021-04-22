@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="but">
+{{info.name}}
+    <br>
+    {{info.address.city}}
+    <br>
+    {{info.url}}
+    <div/>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+
+    var vm=new  Vue({
+
+        el: "#but",
+        data(){
+            return{
+                info:{
+
+                },
+            }
+
+        },
+        mounted(){
+            axios.get('data.json').then(response=>{this.info=response.data})
+        }
+
+
+
+
+    });
+</script>
+
+</body>
+</html>

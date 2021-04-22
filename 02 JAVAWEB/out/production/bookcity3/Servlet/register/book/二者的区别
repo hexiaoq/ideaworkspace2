@@ -1,0 +1,2 @@
+前者配合filter对manager/bookservlet的拦截,可以实现登陆才能访问的后台管理功能
+后者不登陆也可以访问

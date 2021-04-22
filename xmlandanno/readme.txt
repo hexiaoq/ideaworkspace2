@@ -1,0 +1,3 @@
+使用spring自带的事务管理 同时必须配套使用spring自带的jdbctemplate代替dbutils和c3p0进行持久层的编写
+否则不支持
+此项目是xml和注解的混合使用版本

@@ -1,0 +1,14 @@
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: hxiaoq199933V@
+    username: root
+    url: jdbc:mysql://118.178.189.82:3306/atguigu?serverTimezone=GMT%2B8
+server:
+  servlet:
+    context-path: /bookcity3

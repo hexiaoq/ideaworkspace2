@@ -1,0 +1,1 @@
+此包放与数据库打交道的各种jdbc操作,basedao为抽象类,dao为接口,daoimp为实现类并继承basedao
